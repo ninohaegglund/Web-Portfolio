@@ -1,0 +1,19 @@
+img {
+    width: 200px;
+}
+
+.logo{
+    width: 75px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.github-logo {
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(173, 216, 230);
+    margin-right: 10px;
+    
+  }
