@@ -1,19 +1,262 @@
-img {
-    width: 200px;
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px;
+    animation: fadeIn 1.5s;
+    background: url(../assets/images/mainbg.webp);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+  }
+
+  .name{
+    float: right;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #f7f9fa;
+    border-radius: 0.2cap;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    margin-top: 70px;
+    
+  }
+
+  p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.logo{
+  
+  .card {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    width: 44%; 
+    background-color: #fff;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .profilecard {
+    width: 35%; 
+    background-color: #fff;
+    border: 1px solid lightblue;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+  
+  }
+  
+  .card img {
+    width: 20%; 
+    height: auto; 
+    margin-right: 15px; 
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    flex: 1; 
+  }
+  
+  footer {
+    text-align: right;
+  }
+
+  footer span {
+    color: #fff9f9;
+    background-color: rgba(0, 0, 0, 0.295);
+    text-align: right;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
+  }
+  
+  .logo {
     width: 75px;
+    border-radius: 20px;
+    border: 2px solid lightblue;
+    margin-left: 10px;
+  }
+
+  
+  @media (max-width: 680px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    .projects-container {
+      flex-direction: column; 
+    }
+  
+    .card {
+      width: 100%; 
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .card img {
+      width: 100%; 
+      margin-bottom: 15px;
+    }
+  }
+
+
+.nav-homepage {
+  border-color: #f0420d;
+  border-radius: 2cap;
+  padding: 20px 20px;
+  margin-top: 20px;
+  background-color: rgba(10, 10, 10, 0.623);
+  text-align: center;
+}
+
+.nav-homepage a {
+  color: white;
+  font-size: 35px;
+  margin-left: 12px;
+  text-decoration: none;  
+}
+
+.nav-homepage a:hover {
+  color: rgb(149, 187, 243);
+  font-size: 35px;
 }
 
 nav {
-    margin-top: 20px;
+  border-color: #f0420d;
+  border-radius: 2cap;
+  padding: 50px 20px;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 10px; 
+  font-size: 30px;
+  color: #48b1f7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+nav a:hover {
+  color: rgb(154, 205, 235); 
+}
+
+nav a:active {
+  color: #f0420da6;
+}
+
+li {
+  margin-top: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.cv-download {
+  text-align: center;
+  background-color: #d5edf000;
+
+}
+
+.cv-download a {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.cv-download a:hover {
+  color:rgb(183, 227, 252);
+
+}
+
+.cv-download a:active {
+  color: #f0420da9;
+}
+
+.github-link{
+  display: inline-flex;
+  align-items: center;
+  background-color: #feffff00;
+ 
 }
 
 .github-logo {
-    width: 40px;
-    border-radius: 20px;
-    border: 2px solid rgb(173, 216, 230);
-    margin-right: 10px;
-    
-  }
+  width: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(173, 216, 230);
+  margin-right: 10px;
+  
+}
+
+.bg-image {
+  background-image: url(../assets/images/imagebg.webp);
+  border-radius: 10px;
+  width: 98%;
+}
+
+.bg-image-text {
+  background-image: url(../assets/images/textbg.jpeg);
+  border-radius: 10px;
+  width: 98%;
+}
+
+.subject-form {
+  width: 338px;
+  margin-top:10px;
+  margin-left: 5px;
+  
+}
+
+label{
+  margin-left: 10px;
+}
+
+.aboutme-text{
+  padding-bottom: 80px;
+}
+
+.aboutme-text p{
+  margin-bottom: 35px;
+}
+
+
+
+  
+  
