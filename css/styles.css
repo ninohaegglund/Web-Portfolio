@@ -1,24 +1,22 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 50px;
     animation: fadeIn 1.5s;
     background: url(../assets/images/mainbg.webp);
+    background-size: cover;
   }
   
   h1 {
     font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
     margin-right: 50px;
-    background-color: rgba(0, 0, 0, 0.63);
     border-radius: 20px;
-    padding: 20px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: fit-content;
+    color: rgb(24, 17, 17);
+    text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.712);
   }
 
   h2 {
     font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
     margin-left: 20px;
   }
 
@@ -28,15 +26,23 @@ body {
     color: #f7f9fa;
     border-radius: 0.2cap;
     font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 6rem;
+    font-size: 5rem;
     margin-top: 70px;
+    animation: fadeIn 6s;
     
   }
 
   p {
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-left: 20px;
+  
+  }
+
+  li {
+    margin-top: 15px;
+    font-size: 20px;
     max-width: 800px;
     line-height: 1.6;
     margin-left: 20px;
@@ -83,6 +89,7 @@ body {
     border-radius: 20px;
     margin-left: 40px;
     margin-top: 40px;
+    animation: fadeIn 4s;
   
   }
   
@@ -172,7 +179,6 @@ nav a {
   margin-right: 10px; 
   font-size: 30px;
   color: #48b1f7;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
 
@@ -184,30 +190,10 @@ nav a:active {
   color: #f0420da6;
 }
 
-li {
-  margin-top: 15px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
 
-.cv-download {
-  text-align: center;
-  background-color: #d5edf000;
-
-}
-
-.cv-download a {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.cv-download a:hover {
-  color:rgb(183, 227, 252);
-
-}
-
-.cv-download a:active {
-  color: #f0420da9;
+.cv-logo{
+  width: 30px;
+  align-items: center;
 }
 
 .github-link{
@@ -222,7 +208,6 @@ li {
   border-radius: 20px;
   border: 2px solid rgb(173, 216, 230);
   margin-right: 10px;
-  
 }
 
 .bg-image {
@@ -232,16 +217,11 @@ li {
 }
 
 .bg-image-text {
-  background-image: url(../assets/images/textbg.jpeg);
+  background-image: url(../assets/images/textbg2.jpeg);
+  background-size: cover;
   border-radius: 10px;
   width: 98%;
-}
-
-.subject-form {
-  width: 338px;
-  margin-top:10px;
-  margin-left: 5px;
-  
+  padding: 20px;
 }
 
 label{
@@ -256,7 +236,81 @@ label{
   margin-bottom: 35px;
 }
 
+.card-contactform {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
 
+.subject-form {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #6e87f7;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+textarea.subject-form {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button.logo {
+  padding: 10px 20px;
+  background-color: #0d9df0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button.logo:hover {
+  background-color: #ff6843; 
+}
+
+@media (max-width: 768px) {
+  .card-contactform {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .subject-form {
+    font-size: 0.9em; 
+  }
+}
+
+.social-media {
+  text-align: left;
+}
+
+.social-media div {
+  margin: 10px 0;
+}
+
+.social-logo {
+  width: 25px;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-top: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #035aa1;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #84c2ff;
+}
   
   
