@@ -1,10 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: LibreFranklin;
     margin: 50px;
-    animation: fadeIn 1.5s;
+    animation: fadeIn 1.25s;
     background: url(../assets/images/mainbg.webp);
     background-size: cover;
   }
+
+  html {
+    scroll-behavior: smooth;
+   
+}
+
+  @font-face {
+    font-family: 'LibreFranklin';
+    src: url(../fonts/LibreFranklin-Thin.ttf) format('truetype');
+}
   
   h1 {
     font-size: 3rem;
@@ -12,12 +22,19 @@ body {
     border-radius: 20px;
     width: fit-content;
     color: rgb(24, 17, 17);
-    text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.712);
+    text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.356);
+    font-family: LibreFranklin;
+    margin: 25px;
   }
 
   h2 {
     font-size: 2rem;
     margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.295);
+
   }
 
   .name{
@@ -29,6 +46,7 @@ body {
     font-size: 5rem;
     margin-top: 70px;
     animation: fadeIn 6s;
+    text-shadow: 2px 2px 4px rgb(152, 158, 155);
     
   }
 
@@ -37,6 +55,9 @@ body {
     max-width: 800px;
     line-height: 1.6;
     margin-left: 20px;
+    font-weight: 600;
+    color: #333;
+    font-family: LibreFranklin;
   
   }
 
@@ -45,7 +66,14 @@ body {
     font-size: 20px;
     max-width: 800px;
     line-height: 1.6;
-    margin-left: 20px;
+    margin-left: 40px;
+    color: #333;
+    font-weight: bold;
+    font-family: LibreFranklin;
+  }
+
+  ul {
+    list-style: disc inside;
   }
   
   .projects-container {
@@ -71,37 +99,45 @@ body {
     display: flex; 
     flex-direction: row; 
     align-items: center;
-    width: 44%; 
-    background-color: #fff;
-    border: 1px solid lightblue;
+    width: 44%;
+    max-width: 100%;
+    background-color: rgba(179, 208, 245, 0.171);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
   }
 
 
   .profilecard {
-    width: 35%; 
+    width: 30%; 
     background-color: #fff;
-    border: 1px solid lightblue;
     border-radius: 7px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
     border-radius: 20px;
     margin-left: 40px;
     margin-top: 40px;
     animation: fadeIn 4s;
+    margin-bottom: 40px;
   
   }
   
   .card img {
-    width: 20%; 
+    width: 100%;
+    max-width: 50%; 
     height: auto; 
     margin-right: 15px; 
     border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.651);
+    animation: fadeIn 4s;
   }
   
   .card-content {
-    flex: 1; 
+    flex: 1;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.911);
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
   }
   
   footer {
@@ -143,33 +179,39 @@ body {
       width: 100%; 
       margin-bottom: 15px;
     }
+
+    .card-content {
+      padding: 15px;
+    }
   }
 
 
 .nav-homepage {
-  border-color: #f0420d;
-  border-radius: 2cap;
   padding: 20px 20px;
   margin-top: 20px;
-  background-color: rgba(10, 10, 10, 0.623);
   text-align: center;
+  text-shadow: 6px 2px 4px rgba(0, 0, 0, 0.973);
+  background-color: rgba(0, 0, 0, 0.377);
 }
 
 .nav-homepage a {
-  color: white;
+  color: rgb(250, 250, 250);
   font-size: 35px;
   margin-left: 12px;
   text-decoration: none;  
 }
 
 .nav-homepage a:hover {
-  color: rgb(149, 187, 243);
+  color: rgb(171, 203, 252);
   font-size: 35px;
 }
 
+.nav-homepage a:active {
+  color: #f0420da6;
+}
+
+
 nav {
-  border-color: #f0420d;
-  border-radius: 2cap;
   padding: 50px 20px;
   margin-top: 20px;
 }
@@ -178,12 +220,12 @@ nav a {
   text-decoration: none;
   margin-right: 10px; 
   font-size: 30px;
-  color: #48b1f7;
+  color: #0573bd;
   
 }
 
 nav a:hover {
-  color: rgb(154, 205, 235); 
+  color: rgb(169, 216, 243); 
 }
 
 nav a:active {
@@ -192,8 +234,16 @@ nav a:active {
 
 
 .cv-logo{
-  width: 30px;
+  width: 23px;
   align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cvspan {
+  margin-left: 50px;
+  font-size: 24px;
+  font-family: LibreFranklin;
 }
 
 .github-link{
@@ -213,14 +263,14 @@ nav a:active {
 .bg-image {
   background-image: url(../assets/images/imagebg.webp);
   border-radius: 10px;
-  width: 98%;
+  width: 100%;
 }
 
 .bg-image-text {
   background-image: url(../assets/images/textbg2.jpeg);
   background-size: cover;
   border-radius: 10px;
-  width: 98%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -234,6 +284,9 @@ label{
 
 .aboutme-text p{
   margin-bottom: 35px;
+  background-color: #ffffffa1;
+  border-radius: 10px;
+  margin-top: 35px;
 }
 
 .card-contactform {
@@ -241,6 +294,10 @@ label{
   max-width: 600px;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  
 }
 
 form {
@@ -290,27 +347,43 @@ button.logo:hover {
 
 .social-media {
   text-align: left;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+ 
 }
 
 .social-media div {
   margin: 10px 0;
+  
 }
 
 .social-logo {
   width: 25px;
   margin-right: 10px;
   border-radius: 5px;
-  margin-top: 14px;
 }
 
 a {
   text-decoration: none;
-  color: #035aa1;
+  color: #035faa;
   font-weight: bold;
 }
 
 a:hover {
   color: #84c2ff;
 }
+
+.navbar-brand{
+  margin-left: 20px;
   
+}
+
+
+
+
+
+
+
+
   
