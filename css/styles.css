@@ -26,58 +26,49 @@ body {
     margin: 25px;
   }
 
-  h2 {
-    font-size: 2rem;
-    margin-left: 20px;
-    margin-top: 40px;
-    margin-bottom: 25px;
-    padding-bottom: 5px;
-    text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.295);
+ 
+    h2 {
+      font-size: 2rem;
+      margin-left: 20px;
+      font-weight: bolder;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  
+    }
 
-  }
 
   .name{
     float: right;
-    background-color: rgba(0, 0, 0, 0.568);
-    color: #f7f9fa;
+    background-color: rgba(18, 11, 11, 0.404);
+    color: #ffffff;
     border-radius: 0.2cap;
-    font-size: 5rem;
-    margin-top: 70px;
-    animation: fadeIn 6s;
+    font-weight: 500;
+    margin-right: 40px;
+    font-size: 4rem;
+    padding: 20px;
     
   }
 
   p {
     font-size: 20px;
     max-width: 800px;
-    line-height: 1.6;
+    line-height: 2;
     margin-left: 20px;
-    font-weight: 600;
-    color: #333;
-    font-family: LibreFranklin;
-  
+    font-weight: bolder;
   }
 
   li {
     margin-top: 15px;
     font-size: 20px;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-left: 40px;
-    color: #333;
-    font-weight: bold;
-    font-family: LibreFranklin;
+    font-weight: bolder;
   }
 
-  ul {
-    list-style: disc inside;
-  }
   
   .projects-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 20px; 
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   @keyframes fadeIn {
@@ -94,14 +85,15 @@ body {
   
   .card {
     display: flex; 
-    flex-direction: row; 
-    align-items: center;
-    width: 44%;
-    max-width: 100%;
-    background-color: #e6f3ff89;
+    flex-direction: column;
+    width: 44%; 
+    background-color: #fafafa;
+    border: 1px solid lightblue;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.194);
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards;
   }
 
   .card-home {
@@ -145,10 +137,12 @@ body {
   .card-home p {
     color: white;
     font-weight: bold;
+    
      }
 
   .card-home h2 {
     color: white;
+    font-weight: bold;
     }
 
   .card-home li {
@@ -188,34 +182,59 @@ body {
 
   .profilecard {
     width: 30%; 
-    background-color: #fff;
+    background-color: #ffffffe7;
+    border: 1px solid rgb(173, 216, 230);
     border-radius: 7px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.705);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     margin-left: 40px;
-    margin-top: 40px;
-    animation: fadeIn 4s;
     margin-bottom: 40px;
+    animation: fadeIn 3s;
   
   }
   
   .card img {
-    width: 100%;
-    max-width: 50%; 
+    width: 50%; 
     height: auto; 
     margin-right: 15px; 
     border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.651);
-    animation: fadeIn 4s;
+    box-shadow: 0 8px 8px rgb(2, 78, 113);
   }
   
   .card-content {
     flex: 1;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.911);
-    padding: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+  }
+
+  @media (max-width: 680px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      border: 1px solid #ccccccf2;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
+    }
+  
+    .card img {
+      width: 100%; 
+      max-width: 500px; 
+      height: auto; 
+      border-radius: 8px; 
+     
+    }
   }
   
   footer {
@@ -244,18 +263,28 @@ body {
     }
   
     .projects-container {
-      flex-direction: column; 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
   
     .card {
-      width: 100%; 
-      flex-direction: column; 
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      border: 1px solid #ccccccf2;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
     }
   
     .card img {
-      width: 100%; 
-      margin-bottom: 15px;
+      width: 100%;
+      max-width: 500px;
+      height: auto; 
+      border-radius: 8px; 
     }
 
     .card-content {
@@ -467,9 +496,7 @@ a:hover {
   margin-left: 45px;
 }
 
-.col-md-6 {
-  margin-top: 25px;
-}
+
 
 
 
