@@ -88,10 +88,10 @@ body {
     flex-direction: column;
     width: 44%; 
     background-color: #fafafa;
-    border: 1px solid lightblue;
+    border: 0.1px solid rgb(1, 13, 17);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.194);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
     opacity: 0; 
     animation: fadeIn 1s ease-in forwards;
   }
@@ -101,10 +101,10 @@ body {
     flex-direction: column;
     width: 44%; 
     background-color: #000000be;
-    border: 1px solid lightblue;
+    border: 1px solid rgb(1, 13, 17);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.194);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562);
     opacity: 0; 
     animation: fadeIn 1s ease-in forwards;
     word-wrap: break-word;
@@ -183,7 +183,7 @@ body {
   .profilecard {
     width: 30%; 
     background-color: #ffffffe7;
-    border: 1px solid rgb(173, 216, 230);
+    border: 1px solid rgba(179, 223, 238, 0.774);
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
@@ -198,11 +198,13 @@ body {
     height: auto; 
     margin-right: 15px; 
     border-radius: 10px;
-    box-shadow: 0 8px 8px rgb(2, 78, 113);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.829);
   }
   
   .card-content {
     flex: 1;
+    box-shadow: 0 8px 8px rgba(1, 4, 8, 0.411);
+    border-radius: 10px;
   }
 
   @media (max-width: 680px) {
@@ -274,10 +276,10 @@ body {
       flex-direction: column;
       align-items: center;
       margin: 10px;
-      border: 1px solid #ccccccf2;
+      border: 1px solid #cccccce1;
       padding: 10px;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.589);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
     }
   
     .card img {
