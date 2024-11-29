@@ -2,7 +2,6 @@ body {
     font-family: LibreFranklin;
     margin: 50px;
     animation: fadeIn 1.25s;
-    background: url(../assets/images/mainbg.webp);
     background-size: cover;
   }
 
@@ -42,11 +41,9 @@ body {
     background-color: rgba(0, 0, 0, 0.568);
     color: #f7f9fa;
     border-radius: 0.2cap;
-    font-weight: 500;
     font-size: 5rem;
     margin-top: 70px;
     animation: fadeIn 6s;
-    text-shadow: 2px 2px 4px rgb(152, 158, 155);
     
   }
 
@@ -106,6 +103,87 @@ body {
     padding: 15px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
   }
+
+  .card-home {
+    display: flex; 
+    flex-direction: column;
+    width: 44%; 
+    background-color: #000000be;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.194);
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card, .card-home {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card, .card-home {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .card img, .card-home img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .card-home p {
+    color: white;
+    font-weight: bold;
+     }
+
+  .card-home h2 {
+    color: white;
+    }
+
+  .card-home li {
+    color: white;
+    }
+
+    .navbar-home {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      gap: 10px;
+      background-color: rgba(0, 0, 0, 0.39);
+      padding: 40px;
+    }
+    
+    .navbar-home a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin: 0px 10px;
+      padding: 5px 10px;
+      font-size: 24px;
+      display: inline-block;
+    }
+    
+    @media (max-width: 768px) {
+      .navbar-home {
+        flex-direction: column; 
+        align-items: flex-start; 
+      }
+    
+      .navbar-home a {
+        margin: 10px 0; 
+        width: 100%; 
+      }
+    }
+
 
 
   .profilecard {
