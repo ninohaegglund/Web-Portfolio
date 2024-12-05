@@ -47,18 +47,67 @@ body {
     margin-right: 40px;
     font-size: 4rem;
     padding: 20px;
+    transition: color 1s ease-in-out; 
   }
 
 
-  .name span {
-    transition: color 1s ease;
-    color: white;
-    cursor: pointer;
+  #typewriter-line1::after {
+    content: "|";
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink 0.6s step-end infinite;
   }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+ 
+  .name:hover {
+    animation: colorChange 12s infinite ease-in-out ;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #ff6347; 
+    }
+    10% {
+      color: #1e8fff;
+    }
+    20% {
+      color: #32cd32; 
+    }
+    30% {
+      color: #ff1493; 
+    }
+    40% {
+      color: #ffd700;
+    }
+    50% {
+      color: #8a2be2;
+    }
+    60% {
+      color: #00ced1; 
+    }
+    70% {
+      color: #ff4500; 
+    }
+    80% {
+      color: #7cfc00; 
+    }
+    90% {
+      color: #9400d3;
+    }
+    100% {
+      color: #ff6347;
+    }
+  }
+  
 
-  .name span:hover {
-    color: orange;
-  }
+
+ 
 
   p {
     font-size: 20px;
