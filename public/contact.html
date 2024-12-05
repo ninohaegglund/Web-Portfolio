@@ -42,29 +42,32 @@
 
 <div class="card-contactform">
   <form>
-  
     <h3>Have any questions? Contact me directly here!</h3>
-      <label>Your Email</label>
+      <label for="user-email">Your Email</label>
       <div>
-        <input class="subject-form" type="email" placeholder="name@email.me">
+        <input class="subject-form" type="email" name="user-email" id="user-email" placeholder="name@email.me" required>
       </div>
-      <label>Subject</label>
+      <label for="subject">Subject</label>
       <div>
-        <input class="subject-form" type="text" placeholder="Optional">
+        <input class="subject-form" type="text" name="subject" id="subject" placeholder="Optional">
       </div>
-      <label>Your Message</label>
+      <label for="message">Your Message</label>
       <div>
-        <textarea class="subject-form" type="text" placeholder="Write your message here..."></textarea>
+        <textarea class="subject-form" type="text" name="message" id="message" placeholder="Write your message here..." required></textarea>
       </div>
 
     <button class="logo" type="submit">Send</button>
   </form>
 </div>
 </div>
- 
+
+
+
   <footer>
     <span>© 2024 Nino Motta Hägglund. All rights reserved.</span>
     <img class="logo" src="../assets/images/logo.jpg" height="75">
   </footer>
+
+
 </body>
 </html>

@@ -27,3 +27,50 @@ function typeLine2() {
 }
 
 document.addEventListener("DOMContentLoaded", typeLine1);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll(".progress");
+  const cardHome = document.querySelector(".card-home");
+
+  const animateSkillBars = () => {
+    const sectionPosition = cardHome.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (sectionPosition < screenHeight - 100) {
+      progressBars.forEach(bar => {
+        const skillLevel = bar.getAttribute("data-skill-level");
+        bar.style.width = skillLevel + "%";
+      });
+    }
+  };
+
+  window.addEventListener("scroll", animateSkillBars);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTopButton = document.getElementById("back-to-top");
+
+  // Show button when scrolling down
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = "flex";
+      backToTopButton.style.opacity = "1";
+    } else {
+      backToTopButton.style.opacity = "0";
+      setTimeout(() => {
+        if (window.scrollY <= 300) {
+          backToTopButton.style.display = "none";
+        }
+      }, 300); 
+    }
+  });
+
+  
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
