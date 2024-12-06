@@ -20,6 +20,7 @@
     <a href="./public/projects.html">Projects</a>
     <a href="./public/reference.html">References</a>
     <a href="https://drive.google.com/file/d/1eFv2O1g38v56ltX92Mm-w9Skm_oUzl6e/view?usp=drive_link" download>Download CV</a>
+    <a href="#weather">Weather ☁️🔆</a>
   </nav>
 
  
@@ -27,16 +28,27 @@
     <span id="typewriter-line1"></span><br>
     <span id="typewriter-line2"></span>
   </h1>
+
+
+
+
+
+
+ 
   <img src="./assets/images/Profilebw.JPG" class="profilecard" alt="Profile picture of a guy">
+
+  
+
 </div>
 
-
-
+ <!--Main content-->
 <div class="bg-image-text">
 
+  
+  <hr id="summary"></hr>
   <div class="projects-container">
     <div class="card-home">
-      <h2 id="summary">Summary</h2>
+      <h2 >Summary</h2>
       <p>Motivated and detail-oriented individual with experience in RMA and IT.
         Actively teaching myself Full-Stack Web Development through a comprehensive Udemy course, covering HTML, CSS, JavaScript, Node, React, PostgreSQL, Web3, and DApps.
         Passionate about expanding my knowledge and skills in this field.
@@ -44,8 +56,6 @@
         Seeking to leverage these skills and experiences in a challenging role.
       </p>
     </div>
-  
- 
   
     <div class="card-home">
       <h2>Skills</h2>
@@ -144,10 +154,31 @@
 </div>
 
 <button id="back-to-top" class="back-to-top">↑ Top</button>
-    
+
+ <!--Weather-->
+
+<form id="weather" class="weather-form">
+  <h1 class="weather-header">Weather today 🌨️</h1>
+  <input type="text" class="city-input" placeholder="Enter City">
+  <button type="submit" class="weather-btn">Get Weather</button>
+</form>
+
+<div class="weathercard">
+  <div class="weather-info">
+    <h1 class="city-text">Stockholm</h1>
+    <p class="temp-text">25  °C</p>
+    <p class="humidity-text">Humidity: 40%</p>
+    <p class="description">Clear</p>
+    <p class="emoji">🔆</p>
+    <p class="error-display">Please enter a city</p>
+  </div>
+  
+</div>
+
+
 <footer>
   <span>© 2024 Nino Motta Hägglund. All rights reserved.</span>
-  <img class="logo" src="./assets/images/logo.jpg" height="75">
+  <img class="logo" src="./assets/images/logo.jpg">
 </footer>
 
 <script src="script.js"></script>
