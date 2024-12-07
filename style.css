@@ -364,7 +364,7 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.788);
     color: #ffffff;
     border-radius: 0.2cap;
-    font-weight: 500;
+    font-weight: bold;
     margin-right: 40px;
     font-size: 3rem;
     padding: 20px;
@@ -395,6 +395,7 @@ body {
     border: 2px solid #a1b3ff;
     border-radius: 5px;
     font-size: 1rem;
+    font-weight: bold;
     transition: border 1s ease, box-shadow 1s ease;
     max-width: 425px;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
@@ -408,14 +409,20 @@ body {
 
 
   .weathercard {
-    background-image: url("assets/images/weather.webp");
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     transition: box-shadow 1s ease;
     max-width: 888px;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: background-color 1s ease;
+    background: linear-gradient(180deg, rgba(165, 165, 255, 0.384), rgb(99, 134, 250), rgba(56, 154, 235, 0.459), rgba(252, 138, 103, 0.514), rgba(252, 21, 21, 0.062));
+  }
+
+  .weathercard:hover {
+   background-color:  rgba(250, 187, 0, 0.257);
   }
 
   .weather-btn:hover {
@@ -425,49 +432,67 @@ body {
 
   .city-text {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.788);
     margin-left: 50px;
     display: flex;
     flex-direction: column; 
+    margin-bottom: 45px;
+    font-weight: bolder;
   }
 
 
 
-  .weather-info {
-    background: linear-gradient(180deg, rgba(0, 0, 255, 0.301), rgba(10, 58, 214, 0.555), rgba(255, 166, 0, 0.411), rgba(255, 60, 0, 0.226));
-    padding: 15px;
-    transition: background-color 1s ease;
-    display: flex;
-    flex-direction: column;  
-  }
-
-  .weather-info:hover {
-    background-color: rgba(0, 18, 77, 0.733);
-  }
-
-  .humidity-text, .description, .error-display {
+  .humidity-text {
     color: white;
     margin-left: 45px;
-    padding: 15px; 
+    padding: 10px; 
     border-radius: 10px; 
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.788);
-    font-size: 18px;
+    font-size: 20px;
     max-width: 200px;
     transition: background-color 1s ease;
+    font-style: italic;
+    font-weight: bold;
 }
 
-.temp-text, .emoji{
+.error-display {
   color: white;
   margin-left: 45px;
-  padding: 15px; 
+  padding: 10px; 
   border-radius: 10px; 
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.788);
-  font-size: 2.5rem;
+  font-size: 2rem;
+  max-width: 300px;
+  transition: background-color 1s ease;
+  font-weight: bolder;
+}
+
+.temp-text, .emoji {
+  color: white;
+  padding: 10px; 
+  margin-left: 45px;
+  border-radius: 10px; 
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.788);
+  font-size: 2.3rem;
   max-width: 200px;
   transition: background-color 1s ease;
-} 
+ 
+}
 
-.temp-text:hover, .humidity-text:hover, .description:hover, .emoji:hover, .error-display:hover {
+.description {
+  color: white;
+  padding: 10px; 
+  margin-left: 45px;
+  border-radius: 10px; 
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.788);
+  font-size: 2rem;
+  max-width: 300px;
+  transition: background-color 1s ease;
+}
+
+
+.temp-text:hover, .humidity-text:hover, .description:hover, .error-display:hover {
   background-color: rgba(0, 0, 0, 0.315);
 }
   
