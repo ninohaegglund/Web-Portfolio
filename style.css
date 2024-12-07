@@ -680,13 +680,13 @@ nav a:active {
 }
 
 .bg-image {
-  background-image: url(../assets/images/imagebg.webp);
+  background-image: url(assets/images/imagebg.webp);
   border-radius: 10px;
   width: 100%;
 }
 
 .bg-image-text {
-  background-image: url(../assets/images/textbg2.jpeg);
+  background-image: url(assets/images/textbg2.jpeg);
   background-size: cover;
   border-radius: 10px;
   width: 100%;

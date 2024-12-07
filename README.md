@@ -50,6 +50,16 @@ För att säkerställa att min webbportfölj är strukturerad och håller hög k
 
 För mer information om hur dessa principer och metoder tillämpas i min webbportfölj, se tidigare sektioner om **Funktionalitet och Funktioner** samt **Använda Teknologier**.
 
+### Testning och Validering  
+För att säkerställa att webbsidan fungerar som förväntat har jag testat följande:  
+
+- **Väder-API Funktionalitet:** Använt `console.log` för att validera att data hämtas korrekt från OpenWeather API, inklusive temperatur, luftfuktighet, väderbeskrivningar och ikoner.  
+- **Felhantering:**  Testade att hantera om användaren inte anger en stad eller där API-anropet misslyckas. 
+- **Responsiv Design:** Webbsidan har testats på olika enheter och webbläsare för att säkerställa att den anpassar sig korrekt till olika skärmstorlekar.  
+- **Användarupplevelse:** Verifierat att alla funktioner är lättillgängliga och att gränssnittet är intuitivt.  
+
+Jag har fokuserat på att säkerställa att användare inte kan orsaka oönskade beteenden eller fel genom att noggrant testa olika inmatningar och scenarion.
+
  
 
 ## Kontakt
