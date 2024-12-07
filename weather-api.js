@@ -59,7 +59,7 @@ function displayWeatherInfo(data) {
     const emojiDisplay = document.createElement("p")
 
     cityDisplay.textContent = city;
-    tempDisplay.textContent = `${(temp - 273.15).toFixed(0)}°C`;
+    tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
     humidityDisplay.textContent = `Humitidy: ${humidity}%`;
     descDisplay.textContent = description;
     emojiDisplay.textContent = getWeatherEmoji(id);
