@@ -307,6 +307,7 @@ body {
 
     .navbar-home {
       display: flex;
+      align-items: flex-start;
       flex-wrap: wrap-reverse;
       gap: 10px;
       background-color: rgba(0, 0, 0, 0.524);
@@ -355,7 +356,7 @@ body {
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     border-radius: 20px;
     margin-left: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 30px;
     animation: fadeIn 3s;
     transition: box-shadow 1s ease;
@@ -407,13 +408,8 @@ body {
     font-size: 3rem;
     padding: 20px;
     transition: text-shadow 1s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.245); 
   }
 
-
-  .weather-header:hover {
-    text-shadow: 2px 1px 3px rgba(232, 249, 3, 0.616);
-  }
  
   .weather-btn {
     background-color: #0d9df0;
@@ -426,6 +422,10 @@ body {
     padding: 5px;
     margin-left: 25px;
     margin-bottom: 10px;
+  }
+
+  .weather-btn:hover {
+    background-color: #219a03; 
   }
 
 
@@ -465,9 +465,7 @@ body {
    background-color:  rgba(250, 187, 0, 0.257);
   }
 
-  .weather-btn:hover {
-    background-color: #219a03; 
-  }
+ 
 
 
   .city-text {
@@ -586,6 +584,7 @@ body {
   
   footer {
     text-align: right;
+    
   }
 
   footer span {
@@ -602,6 +601,16 @@ body {
     border: 2px solid lightblue;
     margin-left: 10px;
   }
+
+
+  
+  
+  #date-time {
+    color: white;
+    font-size: 19px; 
+    font-weight: bold;
+  }
+
 
   
   @media (max-width: 680px) {
@@ -720,6 +729,8 @@ nav a:active {
   background-image: url(assets/images/imagebg.webp);
   border-radius: 10px;
   width: 100%;
+  background-position: center top;
+    background-size: cover; 
 }
 
 .bg-image-text {
@@ -755,9 +766,6 @@ label{
   
 }
 
-.formbtn {
-  
-}
 
 form {
   display: flex;
@@ -843,11 +851,7 @@ a:hover {
   color: rgb(255, 140, 0);
 }
 
-.navbar-brand{
-  margin-left: 20px;
-  margin-top: 15px;
-  
-}
+
 
 .skills-text li {
   color: white;
@@ -883,6 +887,10 @@ a:hover {
 .back-to-top:hover {
   background-color: #388e3c;
   transform: scale(1.1);
+}
+
+hr {
+  margin-bottom: 35px;
 }
 
 
