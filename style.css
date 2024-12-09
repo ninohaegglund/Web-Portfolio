@@ -2,7 +2,7 @@ body {
     font-family: LibreFranklin;
     margin: 50px;
     animation: fadeIn 1.25s;
-    background-color: #121317;
+    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRlYzgzNnV4cWttaWJ3aXYwMmhkY3JqYXo5cjd5cXQwYjUwc3RvMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1J3ThqHNWUVtZV1m/giphy.webp");
   }
 
 
@@ -355,9 +355,7 @@ html {
     border-radius: 7px;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     border-radius: 20px;
-    margin-left: 40px;
-    margin-bottom: 80px;
-    margin-top: 30px;
+    margin: 40px;
     animation: fadeIn 3s;
     transition: box-shadow 1s ease;
   }
