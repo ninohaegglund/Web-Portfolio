@@ -1,7 +1,7 @@
 
 const backgroundMusic = document.getElementById('backgroundMusic');
 
-backgroundMusic.volume = 0.1;
+backgroundMusic.volume = 0.05;
 
 
 const playButton = document.getElementById('playButton');
