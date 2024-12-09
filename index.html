@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
   
@@ -14,14 +15,14 @@
 
   <nav class="navbar-home">
     <div class="navbar-links">
-      <a href="index.html">Home</a> 
-    <a href="#summary">Introduction</a>
-      <a href="./public/hobbies.html">About Me</a>
-      <a href="./public/contact.html">Contact</a>
-      <a href="./public/projects.html">Projects</a>
-      <a href="./public/reference.html">References</a>
-      <a href="https://drive.google.com/file/d/1eFv2O1g38v56ltX92Mm-w9Skm_oUzl6e/view?usp=drive_link" download>Download CV</a>
-      <a href="#weather">Weather Forecast ☁️🔆</a>
+      <a class="neon-button" href="index.html">Home</a> 
+      <a class="neon-button" href="#summary">Introduction</a>
+      <a class="neon-button" href="./public/hobbies.html">About Me</a>
+      <a class="neon-button" href="./public/contact.html">Contact</a>
+      <a class="neon-button" href="./public/projects.html">Projects</a>
+      <a class="neon-button" href="./public/reference.html">References</a>
+      <a class="neon-button" href="https://drive.google.com/file/d/1eFv2O1g38v56ltX92Mm-w9Skm_oUzl6e/view?usp=drive_link" download>Download CV</a>
+      <a class="neon-button" href="#weather">Weather Forecast ☁️🔆</a>
     </div>
   </nav>
 
@@ -31,13 +32,27 @@
     <span id="typewriter-line2"></span>
   </h1>
 
+
+
  
   <img src="assets/images/Profile.jpg" class="profilecard" alt="Profile picture of a guy">
 
 </div>
 
- <!--Main content-->
+ 
 <div class="bg-image-text">
+
+  <audio id="backgroundMusic" src="assets/audio/Ruby & Alpha Sapphire OST Fortree City Music .mp3" loop></audio>
+  
+  <div class="music-controls">
+    <button id="playButton" class="neon-button">Play Music ▶</button>
+    <button id="pauseButton" class="neon-button">Pause Music ||</button>
+    <div class="volume-control">
+      <label for="volumeControl">🔊 </label>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.1">
+    </div>
+  </div>
+
 
   
   <hr id="summary"></hr>
@@ -187,6 +202,7 @@
 
 <script src="weather-api.js"></script>
 <script src="script.js"></script>
+<script src="music.js"></script>
 
    
 </body>
