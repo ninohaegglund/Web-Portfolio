@@ -23,7 +23,7 @@
       <a class="neon-button" href="./public/contact.html">Contact</a>
       <a class="neon-button" href="./public/projects.html">Projects</a>
       <a class="neon-button" href="./public/reference.html">References</a>
-      <a class="neon-button" href="https://drive.google.com/file/d/1eFv2O1g38v56ltX92Mm-w9Skm_oUzl6e/view?usp=drive_link" download>Download CV</a>
+      <a class="neon-button" href="https://drive.google.com/file/d/1OdzNTQoEMK1rAqEmFQk4lGJ1_RHCc44O/view?usp=drive_link" download>Download CV</a>
       <a class="neon-button" href="#weather">Weather Forecast ☁️🔆</a>
     </div>
   </nav>
@@ -41,16 +41,28 @@
 <div class="bg-image-text">
 
   <audio id="backgroundMusic" src="assets/audio/Ruby & Alpha Sapphire OST Fortree City Music .mp3" loop></audio>
+
+ 
+ 
+
+  
   
   <div class="music-controls">
+
     <button id="playButton" class="neon-button">Play Music ▶</button>
     <button id="pauseButton" class="neon-button">Pause Music ||</button>
     <div class="volume-control">
       <label for="volumeControl">🔊 </label>
       <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.1">
+
     </div>
   </div>
 
+ 
+
+  <div>
+
+  </div>
 
   
   <hr id="summary"></hr>
@@ -166,7 +178,15 @@
       </p>
     </div>
   </div>
+
+  <div class="fetch-data">
+    <input type="text" class="city-input"  id="pokemonName" placeholder="Enter Pokemon Name">
+    <button class="neon-button" onclick="fetchData()">Fetch Pokemon</button> 
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none" >
+  </div>
 </div>
+
+
 
 
 <button id="back-to-top" class="back-to-top">↑ Top</button>

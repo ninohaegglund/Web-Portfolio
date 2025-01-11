@@ -901,10 +901,16 @@ hr {
   padding: 5px 20px;
 }
 
+.fetch-data {
+  max-width: fit-content;
+  border-radius: 8px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  
+}
 
-
-.music-controls button {
-  border: none;
+.fetch-data button {
+  border-radius: 25px;
   padding: 5px 20px;
   font-size: 1rem;
   font-weight: bold;
@@ -912,6 +918,28 @@ hr {
   margin: 10px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.356);
+  border: 1px solid #ffc401;
+  box-shadow: 0 0 15px #03a2ec7c, 0 0 30px #0abaff7a;
+}
+
+.fetch-data input {
+  max-width: 200px;
+  padding: 5px;
+}
+
+
+
+.music-controls button {
+  border-radius: 25px;
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(57, 66, 61, 0.356);
+  border: 1px solid #ffc401;
+  box-shadow: 0 0 15px #03a2ec7c, 0 0 30px #0abaff7a;
 }
 
 
@@ -930,11 +958,11 @@ hr {
     font-weight: bold;
     color: white;
     background: rgba(0, 0, 0, 0.651);
-    border: 1px solid #0aff9d;
+    border: 1px solid #ffc401;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 15px #0aff9da4, 0 0 30px #0aff9da1;
+    box-shadow: 0 0 15px #0aff9d52, 0 0 30px #0aff9dda;
     }
     .neon-button:hover {
     color: #0aff9d;
