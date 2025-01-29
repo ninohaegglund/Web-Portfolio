@@ -3,7 +3,7 @@
 const weatherForm = document.querySelector(".weather-form");
 const cityInput = document.querySelector(".city-input")
 const card = document.querySelector(".weathercard");
-const apiKey = "4851fd9cd7ad40b3702dc20d259b50e7";
+const apiKey = "102aa46d668b2b9d28951c42ecf9ce85";
 
 
 weatherForm.addEventListener("submit", async event => {
@@ -44,7 +44,7 @@ async function getWeatherData(city) {
 }
 
 function displayWeatherInfo(data) {
-
+    console.log(data);
     const { name: city, 
             main: {temp, humidity}, 
             weather: [{description, id}] } = data;
@@ -75,7 +75,7 @@ function displayWeatherInfo(data) {
     card.appendChild(humidityDisplay);
     card.appendChild(descDisplay);
     card.appendChild(emojiDisplay);
-
+    
 }
 
 function getWeatherEmoji(weatherId) {
