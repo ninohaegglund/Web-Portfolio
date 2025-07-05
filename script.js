@@ -1,5 +1,5 @@
 const line1Text = "Hello! I'm Nino Hägglund.";
-const line2Text = "I'm a Web Developer.";
+const line2Text = "I'm a .NET Developer";
 const typewriterLine1 = document.getElementById("typewriter-line1");
 const typewriterLine2 = document.getElementById("typewriter-line2");
 
